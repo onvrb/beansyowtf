@@ -3,6 +3,6 @@ version: "3"
 services:
   beansyowtf:
     build: .
-    container_name: multirest-bot
+    container_name: beansyowtf
     env_file: [.env]
     restart: unless-stopped
