@@ -6,10 +6,10 @@ DISCORD_API_TOKEN = os.getenv('DISCORD_API_TOKEN')
 
 client = discord.Client()
 
-emojiList = ["🅱", "🇪", "🅰", "🇳", "🇸", "🥫", "🇾", "🅾", "🥚", "🇼", "🇹", "🇫", "🔥"]
+emojimsg = "🅱 🇪 🅰 🇳 🇸 🥚 🇾 🅾 🥫 🇼 🇹 🇫 🔥"  # space separeted, covid
 
 async def react(message):
-    for emoji in emojiList:
+    for emoji in emojimsg.split():
         await message.add_reaction(emoji)
 
 @client.event
