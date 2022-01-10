@@ -6,34 +6,11 @@ DISCORD_API_TOKEN = os.getenv('DISCORD_API_TOKEN')
 
 client = discord.Client()
 
-emojiB = "🅱"
-emojiE = "🇪"
-emojiA = "🅰"
-emojiN = "🇳"
-emojiS = "🇸"
-emojiCan = "🥫"
-emojiY = "🇾"
-emojiO = "🅾"
-emojiEgg = "🥚"
-emojiW = "🇼"
-emojiT = "🇹"
-emojiF = "🇫"
-emojiFire = "🔥"
+emojiList = ["🅱", "🇪", "🅰", "🇳", "🇸", "🥫", "🇾", "🅾", "🥚", "🇼", "🇹", "🇫", "🔥"]
 
 async def react(message):
-    await message.add_reaction(emojiB)
-    await message.add_reaction(emojiE)
-    await message.add_reaction(emojiA)
-    await message.add_reaction(emojiN)
-    await message.add_reaction(emojiS)
-    await message.add_reaction(emojiEgg)
-    await message.add_reaction(emojiY)
-    await message.add_reaction(emojiO)
-    await message.add_reaction(emojiCan)
-    await message.add_reaction(emojiW)
-    await message.add_reaction(emojiT)
-    await message.add_reaction(emojiF)
-    await message.add_reaction(emojiFire)
+    for emoji in emojiList:
+        await message.add_reaction(emoji)
 
 @client.event
 async def on_message(message):
