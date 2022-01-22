@@ -6,3 +6,5 @@ services:
     container_name: beansyowtf
     env_file: [.env]
     restart: unless-stopped
+    volumes:
+      - ./data:/data

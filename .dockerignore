@@ -1,3 +1,7 @@
+
+#
+data/
+
 # git stuff
 .git
 .gitignore
