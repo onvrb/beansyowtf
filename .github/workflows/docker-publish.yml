@@ -12,6 +12,9 @@ on:
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ master ]
+  # manually triggered
+  pull_request_review:
+    branches: [ master ]
 
 env:
   # Use docker.io for Docker Hub if empty
