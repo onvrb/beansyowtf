@@ -8,4 +8,4 @@ Discord bot that reacts to links, attachments and references.
 ## usage:
 
 - `beans`
-- reference a message with `bean this` or `bean that`
+- reference a message with `bean this`
